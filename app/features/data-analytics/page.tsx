@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
-import { CLOUD, DATA_AI, TECHNOLOGY_TRANSFORMATION } from '@/constants';
+import { DATA_ANALYTICS } from '@/constants';
 
-const TechnologyTransformation = () => {
+const DataAnalytics = () => {
     return (
         <motion.section
             id="technology-transformation"
@@ -22,10 +22,10 @@ const TechnologyTransformation = () => {
                     className="flex flex-col items-start justify-center lg:items-center"
                 >
                     <h1 className="bold-64 text-gray-900 leading-tight lg:text-center">
-                    Data <span className="text-blue-400"> and Artificial Intelligence</span>
+                    Data <span className="text-blue-400"> Analytics</span>
                     </h1>
                     <p className="regular-20 mt-6 text-gray-700 lg:text-center max-w-4xl">
-                    Harness the power of Data and Artificial Intelligence to transform your business. Our cutting-edge AI and machine learning solutions turn your data into a strategic asset, delivering actionable insights and driving intelligent decision-making. From predictive analytics to natural language processing and AI-powered automation, we help you unlock new opportunities, enhance customer experiences, and gain a competitive edge in the age of AI.
+                    Turn data into your most valuable asset with our advanced Data Analytics services. We empower organizations to make data-driven decisions with confidence, providing real-time insights, predictive modeling, and intuitive visualizations. Our comprehensive approach covers everything from big data management to governance and quality assurance, ensuring you can trust the data driving your business forward. Discover hidden patterns, forecast trends, and optimize operations with our powerful analytics solutions.
                     </p>
                 </motion.div>
 
@@ -37,7 +37,7 @@ const TechnologyTransformation = () => {
                     viewport={{ once: true }}
                     className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-3"
                 >
-                    {DATA_AI.map((service, idx) => (
+                    {DATA_ANALYTICS.map((service, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, y: 50 }}
@@ -71,7 +71,7 @@ const TechnologyTransformation = () => {
                         transition={{ duration: 0.3 }}
                         className="btn_blue text-white px-8 py-5 text-lg rounded-md"
                     >
-                        Learn More About Our Technology Services
+                        Learn More About Our Data Analytics Services
                     </motion.button>
                 </motion.div>
             </div>
@@ -79,4 +79,4 @@ const TechnologyTransformation = () => {
     );
 };
 
-export default TechnologyTransformation;
+export default DataAnalytics;

@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
-import { CLOUD, DATA_AI, TECHNOLOGY_TRANSFORMATION } from '@/constants';
+import { DATA_AI } from '@/constants';
 
-const TechnologyTransformation = () => {
+const DataAi = () => {
     return (
         <motion.section
             id="technology-transformation"
@@ -71,7 +71,7 @@ const TechnologyTransformation = () => {
                         transition={{ duration: 0.3 }}
                         className="btn_blue text-white px-8 py-5 text-lg rounded-md"
                     >
-                        Learn More About Our Technology Services
+                        Learn More About Our Data And Artificial Intelligence Services
                     </motion.button>
                 </motion.div>
             </div>
@@ -79,4 +79,4 @@ const TechnologyTransformation = () => {
     );
 };
 
-export default TechnologyTransformation;
+export default DataAi;

@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
-import { CLOUD, DATA_AI, TECHNOLOGY_TRANSFORMATION } from '@/constants';
+import { DEMO } from '@/constants';
 
-const TechnologyTransformation = () => {
+const Demo = () => {
     return (
         <motion.section
             id="technology-transformation"
@@ -22,10 +22,10 @@ const TechnologyTransformation = () => {
                     className="flex flex-col items-start justify-center lg:items-center"
                 >
                     <h1 className="bold-64 text-gray-900 leading-tight lg:text-center">
-                    Data <span className="text-blue-400"> and Artificial Intelligence</span>
+                    Demo <span className="text-blue-400"> and Extensions</span>
                     </h1>
                     <p className="regular-20 mt-6 text-gray-700 lg:text-center max-w-4xl">
-                    Harness the power of Data and Artificial Intelligence to transform your business. Our cutting-edge AI and machine learning solutions turn your data into a strategic asset, delivering actionable insights and driving intelligent decision-making. From predictive analytics to natural language processing and AI-powered automation, we help you unlock new opportunities, enhance customer experiences, and gain a competitive edge in the age of AI.
+                    Experience the full potential of our software solutions through our interactive Demos and customizable Extensions. We bring your unique challenges into focus with tailored demonstrations, proof-of-concept development, and seamless integrations. Our flexible approach allows you to extend and customize our core offerings, ensuring a perfect fit for your specific industry needs. From showcasing possibilities to delivering specialized functionalities, we help you maximize the value of your software investments.
                     </p>
                 </motion.div>
 
@@ -37,7 +37,7 @@ const TechnologyTransformation = () => {
                     viewport={{ once: true }}
                     className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-3"
                 >
-                    {DATA_AI.map((service, idx) => (
+                    {DEMO.map((service, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, y: 50 }}
@@ -71,7 +71,7 @@ const TechnologyTransformation = () => {
                         transition={{ duration: 0.3 }}
                         className="btn_blue text-white px-8 py-5 text-lg rounded-md"
                     >
-                        Learn More About Our Technology Services
+                        Learn More About Our Demo And Extensions Services
                     </motion.button>
                 </motion.div>
             </div>
@@ -79,4 +79,4 @@ const TechnologyTransformation = () => {
     );
 };
 
-export default TechnologyTransformation;
+export default Demo;

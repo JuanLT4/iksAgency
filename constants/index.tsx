@@ -69,6 +69,15 @@ export const FEATURES = [
     href: '/features/demo',
 
   },
+  {
+    title: 'Demo/Extensions',
+    icon: <IoExtensionPuzzle size={40} color='white'/>,
+    variant: 'blue',
+    description:
+      'Experience the power of our software through interactive demos and customizable extensions. We create tailored solutions that seamlessly integrate with your existing systems, addressing your unique business challenges',
+    href: '/features/demo',
+
+  },
 ];
 
 export const TECHNOLOGY_TRANSFORMATION = [
@@ -185,6 +194,82 @@ export const DATA_AI = [
   },
 ]
 
+export const DATA_ANALYTICS = [
+  {
+    title: 'Big data processing and management',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      `We implement scalable solutions to handle vast amounts of structured and unstructured data. Our big data architectures enable efficient storage, processing, and analysis of data from diverse sources, unlocking the full potential of your information assets.`,
+  },
+  {
+    title: 'Real-time analytics dashboards',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'We design intuitive, interactive dashboards that provide up-to-the-minute insights into your key performance indicators. These customizable visualizations make it easy for stakeholders at all levels to monitor performance and make data-driven decisions.',
+  },
+  {
+    title: 'Data visualization and reporting',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'Our experts transform complex data into clear, compelling visual narratives. We create customized reports and interactive visualizations that make it easy to communicate insights, identify trends, and drive action across your organization.',
+  },
+  {
+    title: 'Predictive and prescriptive analytics',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'Going beyond descriptive analytics, we implement advanced models that not only predict future outcomes but also recommend optimal actions. These tools support strategic planning, risk management, and operational optimization.',
+  },
+  {
+    title: 'Data governance and quality management',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'We establish robust frameworks for ensuring data accuracy, consistency, and security across your organization. Our data governance solutions include data cataloging, lineage tracking, and quality monitoring, ensuring you can trust the data driving your decisions.',
+  },
+]
+
+export const DEMO = [
+  {
+    title: 'Interactive product demonstrations',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      `We create engaging, hands-on demos that showcase the full capabilities of your software. These interactive experiences allow potential clients to explore features and benefits in a realistic environment, accelerating the sales cycle.`,
+  },
+  {
+    title: 'Customizable software extensions and plugins',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'We develop flexible add-ons and extensions that enhance the functionality of your core software. These customizable components allow clients to tailor the solution to their specific needs, increasing the value and applicability of your offerings.',
+  },
+  {
+    title: 'Integration with existing systems',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'Our integration experts ensure seamless connections between our solutions and your existing IT ecosystem. We develop robust APIs and connectors that enable smooth data flow and process continuity across diverse platforms and applications.',
+  },
+  {
+    title: 'Proof-of-concept development',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'We rapidly prototype and develop proof-of-concept solutions to validate ideas and demonstrate value. This approach minimizes risk and accelerates innovation, allowing you to test new concepts before full-scale implementation.',
+  },
+  {
+    title: 'Tailored solutions for specific industry needs',
+    icon: '/timg.svg',
+    variant: 'blue',
+    description:
+      'Recognizing that each industry has unique challenges, we develop specialized solutions that address sector-specific requirements. From healthcare to finance to manufacturing, our industry-focused approach ensures our solutions deliver maximum relevance and impact.',
+  },
+]
+
 
 
 export const CLIENTS = [
@@ -212,6 +297,15 @@ export const CLIENTS = [
     description:
       'We equip non-profits with affordable, powerful software that maximizes their impact and stretches limited resources. Our solutions help these organizations improve donor management, streamline operations, and focus more on their core mission of making a difference in communities.',
     href: '',
+  },
+  {
+    title: 'Businesses',
+    icon: <MdAddBusiness size={40} color='white'/>,
+    variant: 'blue',
+    description:
+      "Our cutting-edge software solutions help businesses of all sizes boost productivity, reduce costs, and stay competitive in rapidly evolving markets. We provide scalable, customizable tools that drive growth, enhance customer experiences, and unlock new revenue streams.",
+    href: '',
+
   },
   
 ];

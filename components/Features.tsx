@@ -42,7 +42,19 @@ const Features = () => {
               Our <span className='text-blue-400'>Features</span>
             </h2>
           </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
+          <motion.ul
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.2, // Stagger each ClientItem
+                },
+              },
+            }}
+            className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20"
+          >
             {FEATURES.map((feature) => (
               <FeatureItem
                 key={feature.title}
@@ -53,7 +65,7 @@ const Features = () => {
                 href={feature.href}
               />
             ))}
-          </ul>
+          </motion.ul>
         </motion.div>
       </div>
     </section>
@@ -70,7 +82,7 @@ const FeatureItem = ({ title, icon, description, variant, href }: FeatureItem) =
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex w-full flex-1 flex-col items-start"
+        className="flex w-full flex-1 flex-col items-start justify-end h-full"
       >
         <div className={`rounded-full p-4 lg:p-7 ${variant == 'green' ? 'bg-green-50' : variant == 'orange' ? 'bg-orange-50' : variant == 'blue' ? 'bg-blue-400' : ''} img-transition hover-scale cursor-pointer icon-wrapper`}>
           {icon}

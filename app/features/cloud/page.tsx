@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
-import { CLOUD, TECHNOLOGY_TRANSFORMATION } from '@/constants';
+import { CLOUD } from '@/constants';
 
-const TechnologyTransformation = () => {
+const Cloud = () => {
     return (
         <motion.section
             id="technology-transformation"
@@ -71,7 +71,7 @@ const TechnologyTransformation = () => {
                         transition={{ duration: 0.3 }}
                         className="btn_blue text-white px-8 py-5 text-lg rounded-md"
                     >
-                        Learn More About Our Technology Services
+                        Learn More About Our Cloud Services
                     </motion.button>
                 </motion.div>
             </div>
@@ -79,4 +79,4 @@ const TechnologyTransformation = () => {
     );
 };
 
-export default TechnologyTransformation;
+export default Cloud;
