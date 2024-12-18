@@ -5,15 +5,18 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container padding-container sticky top-0 z-30 py-5 ">
       <Link href="/" className="logo-font">
         <span className="text-blue-400">IKS</span> Tech.
       </Link>
       
-
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-blue-400">
+          <Link 
+            href={link.href} 
+            key={link.key} 
+            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-blue-400"
+          >
             {link.label}
           </Link>
         ))}
@@ -38,5 +41,6 @@ const Navbar = () => {
     </nav>
   )
 }
+
 
 export default Navbar

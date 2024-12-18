@@ -1,3 +1,5 @@
+'use client';
+
 import Camp from "@/components/Camp";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
@@ -14,7 +16,7 @@ export default function Home() {
       {/* <Guide /> */}
       <Features />
       <Clients />
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <GetApp /> */}
     </>
   )
