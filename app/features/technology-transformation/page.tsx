@@ -8,7 +8,7 @@ const TechnologyTransformation = () => {
     return (
         <motion.section
             id="technology-transformation"
-            className="py-24"
+            className="pb-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

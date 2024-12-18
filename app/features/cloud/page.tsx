@@ -7,8 +7,8 @@ import { CLOUD } from '@/constants';
 const Cloud = () => {
     return (
         <motion.section
-            id="technology-transformation"
-            className="py-24"
+            id="cloud"
+            className="pb-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

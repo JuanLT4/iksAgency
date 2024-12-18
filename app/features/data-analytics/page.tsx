@@ -7,8 +7,8 @@ import { DATA_ANALYTICS } from '@/constants';
 const DataAnalytics = () => {
     return (
         <motion.section
-            id="technology-transformation"
-            className="py-24"
+            id="data-analytics"
+            className="pb-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -46,7 +46,7 @@ const DataAnalytics = () => {
                             viewport={{ once: true }}
                             className="flex flex-col items-start p-6 bg-white rounded-lg shadow-lg transition-all hover:shadow-xl"
                         >
-                            <h3 className={`bold-32 text-${service.variant}`}>{service.title.split(' ').map((palabra, index) => (
+                            <h3 className={`text-wrapper bold-32 text-${service.variant}`}>{service.title.split(' ').map((palabra, index) => (
                                 <span key={index} className={index % 2 === 0 ? 'text-black' : 'text-blue-400'}>
                                     {palabra}
                                     {index < service.title.length - 1 && ' '} {/* Agrega espacio entre palabras */}
