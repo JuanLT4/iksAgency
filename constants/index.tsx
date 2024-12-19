@@ -11,7 +11,7 @@ export const NAV_LINKS = [
   { href: '/#how-iks-work', key: 'how_iks_work', label: 'How IKS Work?' },
   { href: '/#services', key: 'services', label: 'Services' },
   { href: '/#clients', key: 'clients', label: 'Clients' },
-  { href: '/#pricing', key: 'pricing', label: 'Pricing' },
+  // { href: '/#pricing', key: 'pricing', label: 'Pricing' },
   { href: '/#contact-us', key: 'contact_us', label: 'Contact Us' },
 ];
 
