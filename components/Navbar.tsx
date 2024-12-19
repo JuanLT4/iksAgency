@@ -1,11 +1,31 @@
-import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
-import Link from "next/link"
-import Button from "./Button"
+'use client';
+
+import { useEffect, useState } from "react";
+import { NAV_LINKS } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "./Button";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flexBetween max-container padding-container sticky top-0 z-30 py-5 ">
+    <nav
+      className={`flexBetween max-container padding-container sticky top-0 z-30 py-5 transition-all ${
+        isScrolled ? "border-b border-gray-200 bg-white shadow-md full-navbar-width" : "bg-transparent"  
+      }`}
+    >
       <Link href="/" className="logo-font">
         <span className="text-blue-400">IKS</span> Tech.
       </Link>
@@ -39,8 +59,7 @@ const Navbar = () => {
         className="inline-block cursor-pointer lg:hidden"
       />
     </nav>
-  )
-}
+  );
+};
 
-
-export default Navbar
+export default Navbar;
